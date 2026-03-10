@@ -53,47 +53,47 @@ This guide uses **Ubuntu 24.04 or later**.
 
 ```bash
 sudo apt update
-
+```
 ### Step 2: Install Docker
 
 ```bash
 sudo apt install docker.io -y
-
+```
 Explanation: Installs Docker Engine and Docker CLI on your system. The -y flag automatically confirms the installation prompt.
 
 ### Step 3: Start Docker Service
 
 ```bash
 sudo systemctl start docker
-
+```
 Explanation: Starts the Docker daemon, the background service responsible for running containers and handling Docker commands.
 
 ### Step 4: Check Docker Status
 
 ```bash
 sudo systemctl status docker
-
+```
 Explanation: You can confirm the status if docker is running or not.
 
 ### Step 5: Enable Docker to Start at Boot
 
 ```bash
 sudo systemctl enable docker
-
+```
 Explanation: Ensures Docker starts automatically whenever your system reboots.
 
 ### Step 6: Add Current User to Docker Group (Optional)
 
 ```bash
 sudo usermod -aG docker $USER
-
+```
 Explanation: Adds your user to the docker group so you can run Docker commands without using sudo.
 
 ### Step 6: Verify Docker Installation
 
 ```bash
 docker version
-
+```
 Explanation: Displays the installed Docker client and Docker daemon versions to confirm a successful installation.
 
 ✅ Docker is now installed and ready to use! You can now pull images and run containers.
